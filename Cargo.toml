@@ -1,0 +1,35 @@
+[package]
+name = "maquina-engine"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89.0"
+license = "MIT"
+description = "Canonical backend-neutral VM lifecycle trait for pleme-io máquinas — one engine unifying VZ (kasou) and libkrun (tateru)."
+repository = "https://github.com/pleme-io/maquina-engine"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+async-trait = "0.1"
+
+[features]
+# Opt-in backends. The core trait + types build everywhere with no backend dep.
+tateru-backend = ["dep:tateru"] # libkrun / Hypervisor.framework — the default engine
+kasou-backend = ["dep:kasou"]   # Apple Virtualization.framework — Rosetta + Darwin guests + snapshots
+
+# macOS-only backend deps (FFI / framework bindings). The core stays host-agnostic.
+[target.'cfg(target_os = "macos")'.dependencies]
+tateru = { git = "https://github.com/pleme-io/tateru", optional = true }
+kasou = { git = "https://github.com/pleme-io/kasou", optional = true }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt"] }
+
+[lints.clippy]
+pedantic = "warn"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"
+strip = true
