@@ -355,6 +355,11 @@ pub mod tateru_backend;
 #[cfg(all(target_os = "macos", feature = "kasou-backend"))]
 pub mod kasou_backend;
 
+/// Convergence reconciler — observe → diff → decide → act for a máquina,
+/// expressed as a `shigoto` Job. Behind the `reconcile` feature.
+#[cfg(feature = "reconcile")]
+pub mod reconcile;
+
 pub mod mock {
     //! In-memory [`MaquinaEngine`] for testing — mirrors the proven
     //! `MockVmRuntime` from `kikai` / `libkrun-builder`.
