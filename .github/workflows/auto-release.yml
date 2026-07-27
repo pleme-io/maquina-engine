@@ -10,7 +10,8 @@ on:
 
 jobs:
   release:
-    uses: pleme-io/substrate/.github/workflows/auto-release.yml@main
-    with:
-      bump-type: ${{ inputs.bump-type || 'patch' }}
+    # Direct per-language reusable, NOT the polymorphic auto-release.yml
+    # shim: that shim startup_failure's for every consumer (0 jobs, no
+    # annotations), so releases here never even started.
+    uses: pleme-io/substrate/.github/workflows/cargo-auto-release.yml@main
     secrets: inherit
