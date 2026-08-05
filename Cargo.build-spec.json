@@ -1,7 +1,6 @@
 {
-  "version": 10,
+  "version": 12,
   "workspace": {
-    "root": "/private/tmp/conv-maquina-engine",
     "members": [
       {
         "name": "maquina-engine",
@@ -10,15 +9,15 @@
     ]
   },
   "crates": {
-    "async-trait-0.1.89": {
+    "async-trait-0.1.91": {
       "name": "async-trait",
-      "version": "0.1.89",
+      "version": "0.1.91",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/async-trait/async-trait-0.1.89.crate",
-        "sha256": "9035ad2d096bed7955a320ee7e2230574d28fd3c3a0f186cbea1ff3c7eed5dbb",
-        "name_with_ext": "async-trait-0.1.89.tar.gz"
+        "url": "https://static.crates.io/crates/async-trait/async-trait-0.1.91.crate",
+        "sha256": "ae36dc4177970ef04fde5178d3e2429882def40e57a451f919c098f72baa6cec",
+        "name_with_ext": "async-trait-0.1.91.tar.gz"
       },
       "features": [],
       "proc_macro": true,
@@ -29,7 +28,7 @@
       "runtime_dependencies": [
         {
           "name": "proc_macro2",
-          "package_key": "proc-macro2-1.0.106",
+          "package_key": "proc-macro2-1.0.107",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -39,7 +38,7 @@
         },
         {
           "name": "quote",
-          "package_key": "quote-1.0.45",
+          "package_key": "quote-1.0.47",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -49,7 +48,7 @@
         },
         {
           "name": "syn",
-          "package_key": "syn-2.0.117",
+          "package_key": "syn-3.0.3",
           "kind": "normal",
           "features": [
             "clone-impls",
@@ -69,19 +68,19 @@
       "crate_renames": {
         "proc-macro2": [
           {
-            "version": "1.0.106",
+            "version": "1.0.107",
             "rename": "proc_macro2"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "async-trait",
-        "version": "0.1.89",
+        "version": "0.1.91",
         "edition": "2021",
         "crateRenames": {
           "proc-macro2": [
             {
-              "version": "1.0.106",
+              "version": "1.0.107",
               "rename": "proc_macro2"
             }
           ]
@@ -91,9 +90,9 @@
         "preBuild": "export CARGO_CRATE_NAME=async_trait;"
       }
     },
-    "maquina-engine-0.1.0": {
+    "maquina-engine-0.1.1": {
       "name": "maquina-engine",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "edition": "2024",
       "source": {
         "kind": "path",
@@ -111,7 +110,7 @@
       "runtime_dependencies": [
         {
           "name": "async_trait",
-          "package_key": "async-trait-0.1.89",
+          "package_key": "async-trait-0.1.91",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -121,7 +120,7 @@
         },
         {
           "name": "serde",
-          "package_key": "serde-1.0.228",
+          "package_key": "serde-1.0.229",
           "kind": "normal",
           "features": [
             "derive"
@@ -133,7 +132,7 @@
         },
         {
           "name": "thiserror",
-          "package_key": "thiserror-2.0.18",
+          "package_key": "thiserror-2.0.19",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -146,19 +145,19 @@
       "crate_renames": {
         "async-trait": [
           {
-            "version": "0.1.89",
+            "version": "0.1.91",
             "rename": "async_trait"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "maquina-engine",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "edition": "2024",
         "crateRenames": {
           "async-trait": [
             {
-              "version": "0.1.89",
+              "version": "0.1.91",
               "rename": "async_trait"
             }
           ]
@@ -196,15 +195,15 @@
         "preBuild": "export CARGO_CRATE_NAME=pin_project_lite;"
       }
     },
-    "proc-macro2-1.0.106": {
+    "proc-macro2-1.0.107": {
       "name": "proc-macro2",
-      "version": "1.0.106",
+      "version": "1.0.107",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.106.crate",
-        "sha256": "8fd00f0bb2e90d81d1044c2b32617f68fcb9fa3bb7640c23e9c748e53fb30934",
-        "name_with_ext": "proc-macro2-1.0.106.tar.gz"
+        "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.107.crate",
+        "sha256": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9",
+        "name_with_ext": "proc-macro2-1.0.107.tar.gz"
       },
       "features": [
         "default",
@@ -238,7 +237,7 @@
       },
       "build_rust_crate_args": {
         "crateName": "proc-macro2",
-        "version": "1.0.106",
+        "version": "1.0.107",
         "edition": "2021",
         "features": [
           "default",
@@ -257,15 +256,15 @@
         "preBuild": "export CARGO_CRATE_NAME=proc_macro2;"
       }
     },
-    "quote-1.0.45": {
+    "quote-1.0.47": {
       "name": "quote",
-      "version": "1.0.45",
+      "version": "1.0.47",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/quote/quote-1.0.45.crate",
-        "sha256": "41f2619966050689382d2b44f664f4bc593e129785a36d6ee376ddf37259b924",
-        "name_with_ext": "quote-1.0.45.tar.gz"
+        "url": "https://static.crates.io/crates/quote/quote-1.0.47.crate",
+        "sha256": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001",
+        "name_with_ext": "quote-1.0.47.tar.gz"
       },
       "features": [
         "default",
@@ -279,7 +278,7 @@
       "runtime_dependencies": [
         {
           "name": "proc_macro2",
-          "package_key": "proc-macro2-1.0.106",
+          "package_key": "proc-macro2-1.0.107",
           "kind": "normal",
           "features": [],
           "uses_default_features": false,
@@ -292,14 +291,14 @@
       "crate_renames": {
         "proc-macro2": [
           {
-            "version": "1.0.106",
+            "version": "1.0.107",
             "rename": "proc_macro2"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "quote",
-        "version": "1.0.45",
+        "version": "1.0.47",
         "edition": "2021",
         "features": [
           "default",
@@ -308,7 +307,7 @@
         "crateRenames": {
           "proc-macro2": [
             {
-              "version": "1.0.106",
+              "version": "1.0.107",
               "rename": "proc_macro2"
             }
           ]
@@ -318,15 +317,15 @@
         "preBuild": "export CARGO_CRATE_NAME=quote;"
       }
     },
-    "serde-1.0.228": {
+    "serde-1.0.229": {
       "name": "serde",
-      "version": "1.0.228",
+      "version": "1.0.229",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/serde/serde-1.0.228.crate",
-        "sha256": "9a8e94ea7f378bd32cbbd37198a4a91436180c5bb472411e48b5ec2e2124ae9e",
-        "name_with_ext": "serde-1.0.228.tar.gz"
+        "url": "https://static.crates.io/crates/serde/serde-1.0.229.crate",
+        "sha256": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba",
+        "name_with_ext": "serde-1.0.229.tar.gz"
       },
       "features": [
         "default",
@@ -342,7 +341,7 @@
       "runtime_dependencies": [
         {
           "name": "serde_core",
-          "package_key": "serde_core-1.0.228",
+          "package_key": "serde_core-1.0.229",
           "kind": "normal",
           "features": [
             "result"
@@ -354,7 +353,7 @@
         },
         {
           "name": "serde_derive",
-          "package_key": "serde_derive-1.0.228",
+          "package_key": "serde_derive-1.0.229",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -367,7 +366,7 @@
       "crate_renames": {},
       "build_rust_crate_args": {
         "crateName": "serde",
-        "version": "1.0.228",
+        "version": "1.0.229",
         "edition": "2021",
         "features": [
           "default",
@@ -380,15 +379,15 @@
         "preBuild": "export CARGO_CRATE_NAME=serde;"
       }
     },
-    "serde_core-1.0.228": {
+    "serde_core-1.0.229": {
       "name": "serde_core",
-      "version": "1.0.228",
+      "version": "1.0.229",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/serde_core/serde_core-1.0.228.crate",
-        "sha256": "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad",
-        "name_with_ext": "serde_core-1.0.228.tar.gz"
+        "url": "https://static.crates.io/crates/serde_core/serde_core-1.0.229.crate",
+        "sha256": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48",
+        "name_with_ext": "serde_core-1.0.229.tar.gz"
       },
       "features": [
         "result",
@@ -404,7 +403,7 @@
       "crate_renames": {},
       "build_rust_crate_args": {
         "crateName": "serde_core",
-        "version": "1.0.228",
+        "version": "1.0.229",
         "edition": "2021",
         "features": [
           "result",
@@ -415,15 +414,15 @@
         "preBuild": "export CARGO_CRATE_NAME=serde_core;"
       }
     },
-    "serde_derive-1.0.228": {
+    "serde_derive-1.0.229": {
       "name": "serde_derive",
-      "version": "1.0.228",
+      "version": "1.0.229",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.228.crate",
-        "sha256": "d540f220d3187173da220f885ab66608367b6574e925011a9353e4badda91d79",
-        "name_with_ext": "serde_derive-1.0.228.tar.gz"
+        "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.229.crate",
+        "sha256": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348",
+        "name_with_ext": "serde_derive-1.0.229.tar.gz"
       },
       "features": [
         "default"
@@ -436,7 +435,7 @@
       "runtime_dependencies": [
         {
           "name": "proc_macro2",
-          "package_key": "proc-macro2-1.0.106",
+          "package_key": "proc-macro2-1.0.107",
           "kind": "normal",
           "features": [
             "proc-macro"
@@ -448,7 +447,7 @@
         },
         {
           "name": "quote",
-          "package_key": "quote-1.0.45",
+          "package_key": "quote-1.0.47",
           "kind": "normal",
           "features": [
             "proc-macro"
@@ -460,7 +459,7 @@
         },
         {
           "name": "syn",
-          "package_key": "syn-2.0.117",
+          "package_key": "syn-3.0.3",
           "kind": "normal",
           "features": [
             "clone-impls",
@@ -479,14 +478,14 @@
       "crate_renames": {
         "proc-macro2": [
           {
-            "version": "1.0.106",
+            "version": "1.0.107",
             "rename": "proc_macro2"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "serde_derive",
-        "version": "1.0.228",
+        "version": "1.0.229",
         "edition": "2021",
         "features": [
           "default"
@@ -494,7 +493,7 @@
         "crateRenames": {
           "proc-macro2": [
             {
-              "version": "1.0.106",
+              "version": "1.0.107",
               "rename": "proc_macro2"
             }
           ]
@@ -504,15 +503,15 @@
         "preBuild": "export CARGO_CRATE_NAME=serde_derive;"
       }
     },
-    "syn-2.0.117": {
+    "syn-3.0.3": {
       "name": "syn",
-      "version": "2.0.117",
+      "version": "3.0.3",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/syn/syn-2.0.117.crate",
-        "sha256": "e665b8803e7b1d2a727f4023456bbbbe74da67099c585258af0ad9c5013b9b99",
-        "name_with_ext": "syn-2.0.117.tar.gz"
+        "url": "https://static.crates.io/crates/syn/syn-3.0.3.crate",
+        "sha256": "53e9bae58849f64dfa4f5d5ae372c8341f7305f82a3868709269343628b659a3",
+        "name_with_ext": "syn-3.0.3.tar.gz"
       },
       "features": [
         "clone-impls",
@@ -532,7 +531,7 @@
       "runtime_dependencies": [
         {
           "name": "proc_macro2",
-          "package_key": "proc-macro2-1.0.106",
+          "package_key": "proc-macro2-1.0.107",
           "kind": "normal",
           "features": [],
           "uses_default_features": false,
@@ -542,7 +541,7 @@
         },
         {
           "name": "quote",
-          "package_key": "quote-1.0.45",
+          "package_key": "quote-1.0.47",
           "kind": "normal",
           "features": [],
           "uses_default_features": false,
@@ -565,7 +564,7 @@
       "crate_renames": {
         "proc-macro2": [
           {
-            "version": "1.0.106",
+            "version": "1.0.107",
             "rename": "proc_macro2"
           }
         ],
@@ -578,7 +577,7 @@
       },
       "build_rust_crate_args": {
         "crateName": "syn",
-        "version": "2.0.117",
+        "version": "3.0.3",
         "edition": "2021",
         "features": [
           "clone-impls",
@@ -593,7 +592,7 @@
         "crateRenames": {
           "proc-macro2": [
             {
-              "version": "1.0.106",
+              "version": "1.0.107",
               "rename": "proc_macro2"
             }
           ],
@@ -608,15 +607,15 @@
         "preBuild": "export CARGO_CRATE_NAME=syn;"
       }
     },
-    "thiserror-2.0.18": {
+    "thiserror-2.0.19": {
       "name": "thiserror",
-      "version": "2.0.18",
+      "version": "2.0.19",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/thiserror/thiserror-2.0.18.crate",
-        "sha256": "4288b5bcbc7920c07a1149a35cf9590a2aa808e0bc1eafaade0b80947865fbc4",
-        "name_with_ext": "thiserror-2.0.18.tar.gz"
+        "url": "https://static.crates.io/crates/thiserror/thiserror-2.0.19.crate",
+        "sha256": "09a43598840e33d5b0331f38c5e30d13bb11c11210a4b58f0d9b18a5a5eefcd9",
+        "name_with_ext": "thiserror-2.0.19.tar.gz"
       },
       "features": [
         "default",
@@ -630,7 +629,7 @@
       "runtime_dependencies": [
         {
           "name": "thiserror_impl",
-          "package_key": "thiserror-impl-2.0.18",
+          "package_key": "thiserror-impl-2.0.19",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -643,14 +642,14 @@
       "crate_renames": {
         "thiserror-impl": [
           {
-            "version": "2.0.18",
+            "version": "2.0.19",
             "rename": "thiserror_impl"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "thiserror",
-        "version": "2.0.18",
+        "version": "2.0.19",
         "edition": "2021",
         "features": [
           "default",
@@ -659,7 +658,7 @@
         "crateRenames": {
           "thiserror-impl": [
             {
-              "version": "2.0.18",
+              "version": "2.0.19",
               "rename": "thiserror_impl"
             }
           ]
@@ -669,15 +668,15 @@
         "preBuild": "export CARGO_CRATE_NAME=thiserror;"
       }
     },
-    "thiserror-impl-2.0.18": {
+    "thiserror-impl-2.0.19": {
       "name": "thiserror-impl",
-      "version": "2.0.18",
+      "version": "2.0.19",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/thiserror-impl/thiserror-impl-2.0.18.crate",
-        "sha256": "ebc4ee7f67670e9b64d05fa4253e753e016c6c95ff35b89b7941d6b856dec1d5",
-        "name_with_ext": "thiserror-impl-2.0.18.tar.gz"
+        "url": "https://static.crates.io/crates/thiserror-impl/thiserror-impl-2.0.19.crate",
+        "sha256": "43cbfe0cf76104d42a574802844187e84a305e531ed54455f11fbde0f10541cd",
+        "name_with_ext": "thiserror-impl-2.0.19.tar.gz"
       },
       "features": [],
       "proc_macro": true,
@@ -688,7 +687,7 @@
       "runtime_dependencies": [
         {
           "name": "proc_macro2",
-          "package_key": "proc-macro2-1.0.106",
+          "package_key": "proc-macro2-1.0.107",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -698,7 +697,7 @@
         },
         {
           "name": "quote",
-          "package_key": "quote-1.0.45",
+          "package_key": "quote-1.0.47",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -708,7 +707,7 @@
         },
         {
           "name": "syn",
-          "package_key": "syn-2.0.117",
+          "package_key": "syn-3.0.3",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -721,19 +720,19 @@
       "crate_renames": {
         "proc-macro2": [
           {
-            "version": "1.0.106",
+            "version": "1.0.107",
             "rename": "proc_macro2"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "thiserror-impl",
-        "version": "2.0.18",
+        "version": "2.0.19",
         "edition": "2021",
         "crateRenames": {
           "proc-macro2": [
             {
-              "version": "1.0.106",
+              "version": "1.0.107",
               "rename": "proc_macro2"
             }
           ]
@@ -743,15 +742,15 @@
         "preBuild": "export CARGO_CRATE_NAME=thiserror_impl;"
       }
     },
-    "tokio-1.52.3": {
+    "tokio-1.53.1": {
       "name": "tokio",
-      "version": "1.52.3",
+      "version": "1.53.1",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/tokio/tokio-1.52.3.crate",
-        "sha256": "8fc7f01b389ac15039e4dc9531aa973a135d7a4135281b12d7c1bc79fd57fffe",
-        "name_with_ext": "tokio-1.52.3.tar.gz"
+        "url": "https://static.crates.io/crates/tokio/tokio-1.53.1.crate",
+        "sha256": "202caea871b69668250d242070849eb495be178ed697a3e98aebce5bc81a0bed",
+        "name_with_ext": "tokio-1.53.1.tar.gz"
       },
       "features": [
         "default",
@@ -777,7 +776,7 @@
         },
         {
           "name": "tokio_macros",
-          "package_key": "tokio-macros-2.7.0",
+          "package_key": "tokio-macros-2.7.2",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -796,14 +795,14 @@
         ],
         "tokio-macros": [
           {
-            "version": "2.7.0",
+            "version": "2.7.2",
             "rename": "tokio_macros"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "tokio",
-        "version": "1.52.3",
+        "version": "1.53.1",
         "edition": "2021",
         "features": [
           "default",
@@ -820,7 +819,7 @@
           ],
           "tokio-macros": [
             {
-              "version": "2.7.0",
+              "version": "2.7.2",
               "rename": "tokio_macros"
             }
           ]
@@ -829,15 +828,15 @@
         "preBuild": "export CARGO_CRATE_NAME=tokio;"
       }
     },
-    "tokio-macros-2.7.0": {
+    "tokio-macros-2.7.2": {
       "name": "tokio-macros",
-      "version": "2.7.0",
+      "version": "2.7.2",
       "edition": "2021",
       "source": {
         "kind": "registry",
-        "url": "https://static.crates.io/crates/tokio-macros/tokio-macros-2.7.0.crate",
-        "sha256": "385a6cb71ab9ab790c5fe8d67f1645e6c450a7ce006a33de03daa956cf70a496",
-        "name_with_ext": "tokio-macros-2.7.0.tar.gz"
+        "url": "https://static.crates.io/crates/tokio-macros/tokio-macros-2.7.2.crate",
+        "sha256": "78773a2a397f451582ce068015985c33193cf6dea8b74d2a639fe457b2f07b0e",
+        "name_with_ext": "tokio-macros-2.7.2.tar.gz"
       },
       "features": [],
       "proc_macro": true,
@@ -848,7 +847,7 @@
       "runtime_dependencies": [
         {
           "name": "proc_macro2",
-          "package_key": "proc-macro2-1.0.106",
+          "package_key": "proc-macro2-1.0.107",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -858,7 +857,7 @@
         },
         {
           "name": "quote",
-          "package_key": "quote-1.0.45",
+          "package_key": "quote-1.0.47",
           "kind": "normal",
           "features": [],
           "uses_default_features": true,
@@ -868,7 +867,7 @@
         },
         {
           "name": "syn",
-          "package_key": "syn-2.0.117",
+          "package_key": "syn-3.0.3",
           "kind": "normal",
           "features": [
             "full"
@@ -883,19 +882,19 @@
       "crate_renames": {
         "proc-macro2": [
           {
-            "version": "1.0.106",
+            "version": "1.0.107",
             "rename": "proc_macro2"
           }
         ]
       },
       "build_rust_crate_args": {
         "crateName": "tokio-macros",
-        "version": "2.7.0",
+        "version": "2.7.2",
         "edition": "2021",
         "crateRenames": {
           "proc-macro2": [
             {
-              "version": "1.0.106",
+              "version": "1.0.107",
               "rename": "proc_macro2"
             }
           ]
@@ -933,9 +932,9 @@
       }
     }
   },
-  "root_crate": "maquina-engine-0.1.0",
+  "root_crate": "maquina-engine-0.1.1",
   "workspace_members": [
-    "maquina-engine-0.1.0"
+    "maquina-engine-0.1.1"
   ],
   "flake_metadata": {
     "maquina-engine": {
@@ -945,11 +944,11 @@
   },
   "target_resolves": {
     "base": {
-      "async-trait-0.1.89": {
+      "async-trait-0.1.91": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
-            "package_key": "proc-macro2-1.0.106",
+            "package_key": "proc-macro2-1.0.107",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -959,7 +958,7 @@
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.47",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -969,7 +968,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.117",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [
               "clone-impls",
@@ -988,11 +987,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "maquina-engine-0.1.0": {
+      "maquina-engine-0.1.1": {
         "runtime_dependencies": [
           {
             "name": "async_trait",
-            "package_key": "async-trait-0.1.89",
+            "package_key": "async-trait-0.1.91",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1002,7 +1001,7 @@
           },
           {
             "name": "serde",
-            "package_key": "serde-1.0.228",
+            "package_key": "serde-1.0.229",
             "kind": "normal",
             "features": [
               "derive"
@@ -1014,7 +1013,7 @@
           },
           {
             "name": "thiserror",
-            "package_key": "thiserror-2.0.18",
+            "package_key": "thiserror-2.0.19",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1031,7 +1030,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "proc-macro2-1.0.106": {
+      "proc-macro2-1.0.107": {
         "runtime_dependencies": [
           {
             "name": "unicode_ident",
@@ -1050,11 +1049,11 @@
           "proc-macro"
         ]
       },
-      "quote-1.0.45": {
+      "quote-1.0.47": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
-            "package_key": "proc-macro2-1.0.106",
+            "package_key": "proc-macro2-1.0.107",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1069,11 +1068,11 @@
           "proc-macro"
         ]
       },
-      "serde-1.0.228": {
+      "serde-1.0.229": {
         "runtime_dependencies": [
           {
             "name": "serde_core",
-            "package_key": "serde_core-1.0.228",
+            "package_key": "serde_core-1.0.229",
             "kind": "normal",
             "features": [
               "result"
@@ -1085,7 +1084,7 @@
           },
           {
             "name": "serde_derive",
-            "package_key": "serde_derive-1.0.228",
+            "package_key": "serde_derive-1.0.229",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1102,7 +1101,7 @@
           "std"
         ]
       },
-      "serde_core-1.0.228": {
+      "serde_core-1.0.229": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": [
@@ -1110,11 +1109,11 @@
           "std"
         ]
       },
-      "serde_derive-1.0.228": {
+      "serde_derive-1.0.229": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
-            "package_key": "proc-macro2-1.0.106",
+            "package_key": "proc-macro2-1.0.107",
             "kind": "normal",
             "features": [
               "proc-macro"
@@ -1126,7 +1125,7 @@
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.47",
             "kind": "normal",
             "features": [
               "proc-macro"
@@ -1138,7 +1137,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.117",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [
               "clone-impls",
@@ -1158,11 +1157,11 @@
           "default"
         ]
       },
-      "syn-2.0.117": {
+      "syn-3.0.3": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
-            "package_key": "proc-macro2-1.0.106",
+            "package_key": "proc-macro2-1.0.107",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1172,7 +1171,7 @@
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.47",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -1203,11 +1202,11 @@
           "visit-mut"
         ]
       },
-      "thiserror-2.0.18": {
+      "thiserror-2.0.19": {
         "runtime_dependencies": [
           {
             "name": "thiserror_impl",
-            "package_key": "thiserror-impl-2.0.18",
+            "package_key": "thiserror-impl-2.0.19",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1222,11 +1221,11 @@
           "std"
         ]
       },
-      "thiserror-impl-2.0.18": {
+      "thiserror-impl-2.0.19": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
-            "package_key": "proc-macro2-1.0.106",
+            "package_key": "proc-macro2-1.0.107",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1236,7 +1235,7 @@
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.47",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1246,7 +1245,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.117",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1258,7 +1257,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "tokio-1.52.3": {
+      "tokio-1.53.1": {
         "runtime_dependencies": [
           {
             "name": "pin_project_lite",
@@ -1272,7 +1271,7 @@
           },
           {
             "name": "tokio_macros",
-            "package_key": "tokio-macros-2.7.0",
+            "package_key": "tokio-macros-2.7.2",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1289,11 +1288,11 @@
           "tokio-macros"
         ]
       },
-      "tokio-macros-2.7.0": {
+      "tokio-macros-2.7.2": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
-            "package_key": "proc-macro2-1.0.106",
+            "package_key": "proc-macro2-1.0.107",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1303,7 +1302,7 @@
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.47",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -1313,7 +1312,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.117",
+            "package_key": "syn-3.0.3",
             "kind": "normal",
             "features": [
               "full"
@@ -1354,5 +1353,8 @@
       }
     }
   },
-  "cargo_lock_sha256": "59c3b549dad5ded2d1c460e76fa6091fc55b51a41ee1495ad103b31f38ad84d4"
+  "cargo_lock_sha256": "78ce303abee4259c13fd757b778621dc694ce04ec09328bd56b65f9c809a05ec",
+  "manifest_sha256": {
+    "Cargo.toml": "a40c116dc6bd4b1fa0aef6eb9c6029525632599b706e77c335d8bc08e9bc2a00"
+  }
 }
