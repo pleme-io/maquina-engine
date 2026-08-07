@@ -11,7 +11,7 @@ repository = "https://github.com/pleme-io/maquina-engine"
 serde = { version = "1", features = ["derive"] }
 thiserror = "2"
 async-trait = "0.1"
-shigoto-types = { git = "https://github.com/pleme-io/shigoto", optional = true }
+shigoto-types = { version = "0.1", optional = true }
 
 [features]
 # Opt-in backends. The core trait + types build everywhere with no backend dep.
@@ -22,8 +22,8 @@ reconcile = ["dep:shigoto-types"]
 
 # macOS-only backend deps (FFI / framework bindings). The core stays host-agnostic.
 [target.'cfg(target_os = "macos")'.dependencies]
-tateru = { git = "https://github.com/pleme-io/tateru", optional = true }
-kasou = { git = "https://github.com/pleme-io/kasou", optional = true }
+tateru = { version = "0.1", optional = true }
+kasou = { version = "0.1", optional = true }
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt"] }
