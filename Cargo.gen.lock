@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "d8e40d34fd5c66b1ea23f236820fb1d46db54fa080f7a48a070a9c28d74c87e5",
+  "cargo_lock_sha256": "fc4d647207f50ef08919c48420fa8e61c7f2fdd8c8993bf4f8c6fedd3f5ef3c7",
   "manifest_sha256": {
-    "Cargo.toml": "7cb45d2638c614065c93686008ef4693d08949403b2f4ef2603e524ae123eeed"
+    "Cargo.toml": "aa7f1eca1d434c382bdf23b2c2e183a40d34b98cc6e1b0cfb8b25cbd2ee65784"
   },
   "target_resolves": {
     "base": {
@@ -49,7 +49,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "maquina-engine-0.1.1": {
+      "maquina-engine-0.1.2": {
         "runtime_dependencies": [
           {
             "name": "async_trait",
@@ -420,7 +420,7 @@
       "edition": "2021",
       "proc_macro": true
     },
-    "maquina-engine-0.1.1": {
+    "maquina-engine-0.1.2": {
       "edition": "2024",
       "lib_target": {
         "name": "maquina_engine",
