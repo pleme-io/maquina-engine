@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "fc4d647207f50ef08919c48420fa8e61c7f2fdd8c8993bf4f8c6fedd3f5ef3c7",
+  "cargo_lock_sha256": "1dc4861c4e25d51d8cde2efa4422b4b752d4385c5b6edc8f015d74cc4808f6ab",
   "manifest_sha256": {
-    "Cargo.toml": "aa7f1eca1d434c382bdf23b2c2e183a40d34b98cc6e1b0cfb8b25cbd2ee65784"
+    "Cargo.toml": "05bdcae51b4090792bbd0dbc795af005fd55c6f65ee3bc4f909409814a730b14"
   },
   "target_resolves": {
     "base": {
-      "async-trait-0.1.91": {
+      "async-trait-0.1.92": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -30,7 +30,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-3.0.3",
+            "package_key": "syn-3.0.10",
             "kind": "normal",
             "features": [
               "clone-impls",
@@ -49,11 +49,11 @@
         "build_dependencies": [],
         "features": []
       },
-      "maquina-engine-0.1.2": {
+      "maquina-engine-0.1.3": {
         "runtime_dependencies": [
           {
             "name": "async_trait",
-            "package_key": "async-trait-0.1.91",
+            "package_key": "async-trait-0.1.92",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -75,7 +75,7 @@
           },
           {
             "name": "thiserror",
-            "package_key": "thiserror-2.0.19",
+            "package_key": "thiserror-2.0.21",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -96,7 +96,7 @@
         "runtime_dependencies": [
           {
             "name": "unicode_ident",
-            "package_key": "unicode-ident-1.0.24",
+            "package_key": "unicode-ident-1.0.27",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -199,7 +199,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-3.0.3",
+            "package_key": "syn-3.0.10",
             "kind": "normal",
             "features": [
               "clone-impls",
@@ -219,7 +219,7 @@
           "default"
         ]
       },
-      "syn-3.0.3": {
+      "syn-3.0.10": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -243,7 +243,7 @@
           },
           {
             "name": "unicode_ident",
-            "package_key": "unicode-ident-1.0.24",
+            "package_key": "unicode-ident-1.0.27",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -264,11 +264,11 @@
           "visit-mut"
         ]
       },
-      "thiserror-2.0.19": {
+      "thiserror-2.0.21": {
         "runtime_dependencies": [
           {
             "name": "thiserror_impl",
-            "package_key": "thiserror-impl-2.0.19",
+            "package_key": "thiserror-impl-2.0.21",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -283,7 +283,7 @@
           "std"
         ]
       },
-      "thiserror-impl-2.0.19": {
+      "thiserror-impl-2.0.21": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
@@ -307,7 +307,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-3.0.3",
+            "package_key": "syn-3.0.10",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -319,7 +319,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "tokio-1.53.1": {
+      "tokio-1.54.1": {
         "runtime_dependencies": [
           {
             "name": "pin_project_lite",
@@ -374,7 +374,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-3.0.3",
+            "package_key": "syn-3.0.10",
             "kind": "normal",
             "features": [
               "full"
@@ -388,7 +388,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "unicode-ident-1.0.24": {
+      "unicode-ident-1.0.27": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
@@ -416,11 +416,11 @@
     }
   },
   "per_crate": {
-    "async-trait-0.1.91": {
+    "async-trait-0.1.92": {
       "edition": "2021",
       "proc_macro": true
     },
-    "maquina-engine-0.1.2": {
+    "maquina-engine-0.1.3": {
       "edition": "2024",
       "lib_target": {
         "name": "maquina_engine",
@@ -450,25 +450,25 @@
       "edition": "2021",
       "proc_macro": true
     },
-    "syn-3.0.3": {
+    "syn-3.0.10": {
       "edition": "2021"
     },
-    "thiserror-2.0.19": {
+    "thiserror-2.0.21": {
       "edition": "2021",
       "build_script": "build.rs"
     },
-    "thiserror-impl-2.0.19": {
+    "thiserror-impl-2.0.21": {
       "edition": "2021",
       "proc_macro": true
     },
-    "tokio-1.53.1": {
+    "tokio-1.54.1": {
       "edition": "2021"
     },
     "tokio-macros-2.7.2": {
       "edition": "2021",
       "proc_macro": true
     },
-    "unicode-ident-1.0.24": {
+    "unicode-ident-1.0.27": {
       "edition": "2021"
     }
   },
