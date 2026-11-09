@@ -1,8 +1,6 @@
 # maquina-engine — canonical VM lifecycle trait
 
-Part of the **máquina** primitive. Canonical spec:
-[`theory/MAQUINA.md`](../theory/MAQUINA.md). CSE / Blackmatter Development
-apply; read the org-level `CLAUDE.md` first.
+Part of the **máquina** primitive. CSE / Blackmatter Development apply; read the org-level `CLAUDE.md` first.
 
 One backend-neutral trait, `MaquinaEngine`, unifying the fleet's two tested
 VM-runtime traits onto one surface keyed on `(MaquinaId, VmShape, BootClosure)`:

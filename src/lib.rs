@@ -20,7 +20,7 @@
 //!   machine — the richest backend); libkrun maps onto the subset it supports.
 //! - [`BootClosure`] generalizes `kikai::BootFiles` (kernel / initrd / init)
 //!   and is produced **nix-store-friendly** by sui + tatara-nix from a
-//!   `(defsystem …)` value — see `theory/MAQUINA.md` §VII.
+//!   `(defsystem …)` value.
 //! - [`LaunchResult`] mirrors `kikai::LaunchResult`.
 //! - [`mock::MockEngine`] mirrors the proven `MockVmRuntime`.
 //!
@@ -143,7 +143,7 @@ impl std::fmt::Display for VmState {
 }
 
 /// How a máquina attaches to the network. Per-máquina **projection** of the
-/// fleet `(defrede …)` domain (see `theory/MAQUINA.md` § Networking).
+/// fleet `(defrede …)` domain.
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(tag = "kind", rename_all = "kebab-case")]
 pub enum NetworkMode {
