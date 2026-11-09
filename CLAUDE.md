@@ -13,12 +13,12 @@ VM-runtime traits onto one surface keyed on `(MaquinaId, VmShape, BootClosure)`:
 - **Its own primitive, maximally reused.** `VmState` ← kasou's VZ state machine;
   `BootClosure` ← `kikai::BootFiles`; `MockEngine` ← the proven `MockVmRuntime`.
   No third runtime is invented.
-- **Zero shell-out** (cardinal invariant, MAQUINA.md §I): impls drive libkrun/VZ
+- **Zero shell-out** (cardinal invariant): impls drive libkrun/VZ
   in-process via FFI/framework bindings. No `vfkit`/`qemu`/`virsh`/`nix`
   subprocess in the hot path.
 - **nix-store-friendly via sui.** `BootClosure` paths are `/nix/store` paths
   produced by sui + tatara-nix from a `(defsystem …)` value. All authoring
-  lowers to the underlying sui (MAQUINA.md §VII).
+  lowers to the underlying sui.
 
 ## M0 wiring (consumers)
 
